@@ -25,8 +25,11 @@ we want eat cruise named "panned apple pie"
 ```
 guest: we want a apple pie panned type
 chief: ok, let me write the recipe for `panned apple pie`, here is the recipe
+guest: thanks
+chief: (run to kitche, writing the following recipe)
 
    .PHONY: panned_apple_pie
-   panned_apple_pie:  ai_compiler ai_core_binutils toolchain_profiler xx1.o xx2.o
+   panned_apple_pie:  apple.o sugar.o pan.o oil.o
+   cc -o panned_apple_pie apple.o sugar.o pan.o oil.o
    
 ```
